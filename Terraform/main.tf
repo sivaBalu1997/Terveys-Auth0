@@ -4,12 +4,12 @@ provider "auth0" {
   client_secret = var.auth0_client_secret
 }
 
-resource "auth0_organization" "my_organization" {
-  name         = "My Organization"
-  display_name = "My Organization Display Name"
+resource "auth0_organization" "demo_organization" {
+  name         = "Demo Organization"
+  display_name = "Demo Organization Display Name"
   
   brand {
-    logo_url = "https://example.com/logo.png"
+    logo_url = "https://demo.com/logo.png"
     
     colors {
       primary          = "#FF5733"
